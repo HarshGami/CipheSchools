@@ -4,9 +4,10 @@
     padding: 0;
 }
 
-.header_box {
+.header-box {
     height: 110px;
     width: 100%;
+    background-color: white;
     background-image: url(../../assets/headerback.png);
     background-position: 50%;
     background-repeat: no-repeat;
@@ -21,7 +22,7 @@
     background: linear-gradient(to right, #fff, transparent, #fff);
     gap: 1rem;
     height: 100%;
-    padding: 5px 20px;
+    padding: 5px 30px;
 }
 
 .profile-box {
@@ -35,6 +36,23 @@
 
 .detail-container {
     padding: 7px 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+    height: 100px;
+}
+
+.greeting {
+    font-size: 20px;
+}
+
+.user-name {
+    font-size: 22px;
+}
+
+.user-email {
+    font-size: 16px;
 }
 
 .right-container {
@@ -43,8 +61,70 @@
     justify-content: space-between;
 }
 
-.follower-container{
+.follower-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: auto;
+    height: 100px;
+}
+
+.follower-count {
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 550;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 500px) {
+    .header-box {
+        height: 85px;
+    }
+
+    .header-container {
+        gap: 10px;
+        padding: 0 20px;
+    }
+    .greeting {
+        font-size: 14px;
+    }
+    
+    .user-name {
+        font-size: 16px;
+    }
+    
+    .user-email {
+        font-size: 12px;
+    }
+
+    .follower-count {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width:500px) {
+    .header-box {
+        height: 100px;
+    }
+
+    .header-container {
+        gap: 10px;
+        padding: 0 20px;
+    }
+    .greeting {
+        font-size: 17px;
+    }
+    
+    .user-name {
+        font-size: 20px;
+    }
+    
+    .user-email {
+        font-size: 13px;
+    }
+
+    .follower-count {
+        font-size: 16px;
+    }
 }
