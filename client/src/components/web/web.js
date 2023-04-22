@@ -26,7 +26,7 @@ function Web() {
 
   useEffect(()=>{
     async function getlinks(){
-      const res = await fetch("http://localhost:5000/api/profile/getlinks", {
+      const res = await fetch(process.env.REACT_APP_GETLINKS, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -50,7 +50,7 @@ function Web() {
     pen ? setdisabled(dabled) : setdisabled(!dabled);
 
     if (pen === 1) {
-      const res = await fetch("http://localhost:5000/api/profile/addlinks", {
+      const res = await fetch(process.env.REACT_APP_ADDLINKS, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

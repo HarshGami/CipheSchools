@@ -12,7 +12,7 @@ function Professional() {
 
   useEffect(()=>{
     async function addprofessional(){
-      const res = await fetch("http://localhost:5000/api/profile/getprofessional", {
+      const res = await fetch(process.env.REACT_APP_GETPROFESSIONAL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -37,7 +37,7 @@ function Professional() {
     pen ? setdisabled(dabled) : setdisabled(!dabled);
 
     if (pen === 1) {
-      const res = await fetch("http://localhost:5000/api/profile/addprofessional", {
+      const res = await fetch(process.env.REACT_APP_ADDPROFESSIONAL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

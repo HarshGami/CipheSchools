@@ -11,7 +11,7 @@ function About() {
 
   useEffect(() => {
     async function getabout() {
-      const res = await fetch("http://localhost:5000/api/profile/getabout", {
+      const res = await fetch(process.env.REACT_APP_GETABOUT, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -35,7 +35,7 @@ function About() {
     pen ? setdisabled(dabled) : setdisabled(!dabled);
 
     if (pen === 1) {
-      const res = await fetch("http://localhost:5000/api/profile/addabout", {
+      const res = await fetch(process.env.REACT_APP_ADDABOUT, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
