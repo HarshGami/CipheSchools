@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.map-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.weeks {
+    margin: 0 5px;
+}
+
+.w {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    height: 16px;
+    margin: 1.5px;
+    color: #c0bfbf;
+}
+
+.month-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.month-text {
+    color: #c0bfbf;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.week-grid {
+    display: flex;
+}
+
+.year {
+    display: flex;
+    width: fit-content;
+}
+
+.day {
+    width: 16px;
+    height: 16px;
+    margin: 1px;
+    background-color: white;
+}
+
+.day:hover {
+    border: 1px solid black;
+}
+
+.day1 {
+    background-color: #fce4cb;
+}
+
+.day2 {
+    background-color: #ffc891;
+}
+
+.day3 {
+    background-color: #fca44c;
+}
+
+
+@media screen and (max-width: 500px) {
+    .day {
+        width: 10px;
+        height: 10px;
+        margin: 0.5px;
+    }
+
+    .weeks {
+        margin: 0 4.5px;
+    }
+
+    .w {
+        font-size: 16px;
+        height: 16px;
+        margin: 1.5px;
+    }
+
+    .month-text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1260px) and (min-width:1050px) {
+    .day {
+        width: 14px;
+        height: 14px;
+        margin: 0.8px;
+    }
+
+    .weeks {
+        margin: 0 4.5px;
+    }
+
+    .w {
+        font-size: 14px;
+        height: 14px;
+        margin: 1px;
+    }
+
+    .month-text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1050px) and (min-width:900px) {
+    .day {
+        width: 12px;
+        height: 12px;
+        margin: 0.6px;
+    }
+
+    .weeks {
+        margin: 0 4px;
+    }
+
+    .w {
+        font-size: 12px;
+        height: 12px;
+        margin: 0.8px;
+    }
+
+    .month-text {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width:730px) {
+    .day {
+        width: 10px;
+        height: 10px;
+        margin: 0.4px;
+    }
+
+    .weeks {
+        margin: 0 3.5px;
+    }
+
+    .w {
+        font-size: 10px;
+        height: 10px;
+        margin: 0.6px;
+    }
+
+    .month-text {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 730px) and (min-width:570px) {
+    .day {
+        width: 8px;
+        height: 8px;
+        margin: 0.2px;
+    }
+
+    .weeks {
+        margin: 0 3px;
+    }
+
+    .w {
+        font-size: 8px;
+        height: 8px;
+        margin: 0.4px;
+    }
+
+    .month-text {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 570px) and (min-width:440px) {
+    .day {
+        width: 6px;
+        height: 6px;
+        margin: 0.2px;
+    }
+
+    .weeks {
+        margin: 0 2.5px;
+    }
+
+    .w {
+        font-size: 6px;
+        height: 6px;
+        margin: 0.2px;
+    }
+
+    .month-text {
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-width: 440px) and (min-width:370px) {
+    .day {
+        width: 5px;
+        height: 5px;
+        margin: 0.1px;
+    }
+
+    .weeks {
+        margin: 0 2px;
+    }
+
+    .w {
+        font-size: 5px;
+        height: 5px;
+        margin: 0.1px;
+    }
+
+    .month-text {
+        font-size: 5px;
+    }
+}
+
+@media screen and (max-width: 370px) and (min-width:270px) {
+    .day {
+        width: 4px;
+        height: 4px;
+        margin: 0.1px;
+    }
+
+    .weeks {
+        margin: 0 1.5px;
+    }
+
+    .w {
+        font-size: 4px;
+        height: 4px;
+        margin: 0.1px;
+    }
+
+    .month-text {
+        font-size: 4px;
+    }
+}

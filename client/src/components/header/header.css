@@ -86,14 +86,15 @@
         gap: 10px;
         padding: 0 20px;
     }
+
     .greeting {
         font-size: 14px;
     }
-    
+
     .user-name {
         font-size: 16px;
     }
-    
+
     .user-email {
         font-size: 12px;
     }
@@ -112,14 +113,15 @@
         gap: 10px;
         padding: 0 20px;
     }
+
     .greeting {
         font-size: 17px;
     }
-    
+
     .user-name {
         font-size: 20px;
     }
-    
+
     .user-email {
         font-size: 13px;
     }
