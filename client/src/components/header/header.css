@@ -5,6 +5,7 @@
 }
 
 .header-box {
+    z-index: 1;
     height: 110px;
     width: 100%;
     background-color: white;
