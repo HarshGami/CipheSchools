@@ -1,0 +1,270 @@
+.popup-container {
+    position: fixed;
+    z-index: 5;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(33, 33, 33, 0.5);
+}
+
+.popup {
+    z-index: 10;
+    position: fixed;
+    top: 20vh;
+    left: 30vw;
+    width: 520px;
+    height: 320px;
+    background-color: white;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.pop-link {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px;
+    position: relative;
+    width: 100%;
+}
+
+.pop-title {
+    font-size: 15px;
+}
+
+.pop-input-link {
+    background-color: rgb(231, 229, 229);
+    border-radius: 8px;
+    display: flex;
+    margin-top: 4px;
+    padding: 0.5rem 1rem;
+}
+
+.pop-link-text {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    font-weight: 550;
+    line-height: 1.5;
+    width: 100%;
+}
+
+.right-btn {
+    margin-top: 10px;
+    align-items: center;
+    background: #f3912e;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-size: 13px;
+    height: 28px;
+    justify-content: center;
+    line-height: 1;
+    outline: none;
+    transition: 0.15s ease;
+    width: 80px;
+}
+
+.left-btn {
+    margin-top: 10px;
+    margin-right:10px ;
+    align-items: center;
+    background: black;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-size: 13px;
+    height: 28px;
+    justify-content: center;
+    line-height: 1;
+    outline: none;
+    transition: 0.15s ease;
+    width: 80px;
+}
+
+@media screen and (max-width: 1260px) and (min-width:1150px) {
+    .popup {
+        left: 28vw;
+    }
+}
+
+@media screen and (max-width: 1150px) and (min-width:1050px) {
+    .popup {
+        left:25vw;
+    }
+}
+
+@media screen and (max-width: 1050px) and (min-width:900px) {
+    .popup {
+        left:22vw;
+    }
+}
+
+
+@media screen and (max-width: 900px) and (min-width:840px) {
+    .popup {
+        left:19vw;
+    }
+}
+
+@media screen and (max-width: 840px) and (min-width:750px) {
+    .popup {
+        left:15vw;
+    }
+}
+
+@media screen and (max-width: 750px) and (min-width:650px) {
+    .popup {
+        left:11vw;
+    }
+}
+
+@media screen and (max-width: 650px) and (min-width:600px) {
+    .popup {
+        left:6vw;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width:550px) {
+    .popup {
+        left:3vw;
+    }
+}
+
+@media screen and (max-width: 550px) and (min-width:530px) {
+    .popup {
+        width: 480px;
+        left:5vw;
+    }
+    .pop-link {
+        width: 90%;
+        margin: auto;
+    }
+    .btn-box{
+        width: 90%;
+        margin: auto;
+    }
+    .pop-link{
+        margin: 4.5px auto;
+    }
+}
+
+@media screen and (max-width: 530px) and (min-width:500px) {
+    .popup {
+        width: 480px;
+        left:2vw;
+    }
+    .pop-link {
+        width: 90%;
+        margin: auto;
+    }
+    .btn-box{
+        width: 90%;
+        margin: auto;
+    }
+    .pop-link{
+        margin: 4.5px auto;
+    }
+}
+
+@media screen and (max-width: 500px) and (min-width:450px) {
+    .popup {
+        width: 430px;
+        left:2vw;
+    }
+    .pop-link {
+        width: 85%;
+        margin: auto;
+    }
+    .btn-box{
+        width: 85%;
+        margin: auto;
+    }
+    .pop-link{
+        margin: 4px auto;
+    }
+}
+
+@media screen and (max-width: 450px) and (min-width:410px) {
+    .popup {
+        width: 390px;
+        left:2vw;
+    }
+    .pop-link {
+        width: 75%;
+        margin: auto;
+    }
+    .btn-box{
+        width: 75%;
+        margin: auto;
+    }
+    .pop-link{
+        margin: 3.5px auto;
+    }
+}
+
+@media screen and (max-width: 410px) and (min-width:370px) {
+    .popup {
+        width: 350px;
+        left:2vw;
+    }
+    .pop-link {
+        width: 65%;
+        margin: auto;
+    }
+    .btn-box{
+        width: 65%;
+        margin: auto;
+    }
+    .pop-link{
+        margin: 3px auto;
+    }
+}
+
+@media screen and (max-width: 370px) and (min-width:330px) {
+    .popup {
+        width: 310px;
+        left:2vw;
+    }
+    .pop-link {
+        width: 55%;
+        margin: auto;
+    }
+    .btn-box{
+        width: 55%;
+        margin: auto;
+    }
+    .pop-link{
+        margin: 2.5px auto;
+    }
+}
+
+@media screen and (max-width: 330px) and (min-width:290px) {
+    .popup {
+        width: 280px;
+        left:2vw;
+    }
+    .pop-link {
+        width: 50%;
+        margin: auto;
+    }
+    .btn-box{
+        width: 50%;
+        margin: auto;
+    }
+    .pop-link{
+        margin: 2px auto;
+    }
+}

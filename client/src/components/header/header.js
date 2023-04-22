@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./header.css";
 import { BiPencil } from "react-icons/bi";
 
@@ -21,7 +22,7 @@ function Header() {
             <div className="user-email">harshgami39@gmail.com</div>
           </div>
           <div className="follower-container">
-            <div className="follower-count">0 Followers</div>
+            <Link className="follower-count" to="/followers">0 Followers</Link>
           </div>
         </div>
       </div>

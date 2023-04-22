@@ -72,6 +72,8 @@
 
 .follower-count {
     font-size: 17px;
+    color: rgba(8, 15, 15, 0.75);
+    text-decoration: none;
     cursor: pointer;
     font-weight: 550;
     text-align: center;

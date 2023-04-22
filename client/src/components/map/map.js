@@ -151,18 +151,23 @@ const Map = () => {
     );
   });
   return (
-    <div className="map-grid">
-      <div className="weeks">
-        <div className="w"></div>
-        <div className="w"></div>
-        <div className="w">Mon</div>
-        <div className="w"></div>
-        <div className="w">Wed</div>
-        <div className="w"></div>
-        <div className="w">Fri</div>
-        <div className="w"></div>
+    <div className="map-container">
+      <div className="header_container">
+        <div className="left-header">CIPHER MAP</div>
       </div>
-      <div className="year">{yearMap}</div>
+      <div className="map-grid">
+        <div className="weeks">
+          <div className="w"></div>
+          <div className="w"></div>
+          <div className="w">Mon</div>
+          <div className="w"></div>
+          <div className="w">Wed</div>
+          <div className="w"></div>
+          <div className="w">Fri</div>
+          <div className="w"></div>
+        </div>
+        <div className="year">{yearMap}</div>
+      </div>
     </div>
   );
 };

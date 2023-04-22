@@ -1,28 +1,36 @@
 import "../professional/professional.css";
-import React from "react";
+import React, { useState } from "react";
+import Passpopup from "../passwordpopup/passpopup";
 
 function Password() {
+  const [trigger, settrigger] = useState(0);
+
   return (
-    <div className="password-container">
-      <div class="top-row">
-        <div class="left-header">Password &amp; Security</div>
-        <div class="right-header">Change</div>
-      </div>
-      <div class="links-box">
-        <div class="link">
-          <div class="title">Password</div>
-          <div class="input-link">
-            <input
-              type="password"
-              class="link-text"
-              placeholder="password"
-              disabled
-              value=".................."
-            />
+    <>
+      <div className="password-container">
+        <Passpopup trigger={trigger} settrigger={settrigger}></Passpopup>
+        <div className="top-row">
+          <div className="left-header">Password &amp; Security</div>
+          <div className="right-header" onClick={(e) => settrigger(1)}>
+            Change
+          </div>
+        </div>
+        <div className="links-box">
+          <div className="link">
+            <div className="title">Password</div>
+            <div className="input-link">
+              <input
+                type="password"
+                className="link-text"
+                placeholder="password"
+                disabled
+                value=".................."
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
