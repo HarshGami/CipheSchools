@@ -1,46 +1,46 @@
-import "./passpopup.css";
+import "../passwordpopup/passpopup.css";
 import React from "react";
 
-function Passpopup({ trigger, settrigger }) {
+function Profilepopup({ trigger, settrigger }) {
   return trigger ? (
     <div className="popup-container">
       <div className="popup">
         <div className="inner-popup">
           <div className="links-box">
             <div className="pop-link">
-              <div className="pop-title">Current Password</div>
+              <div className="pop-title">First Name</div>
               <div className="pop-input-link">
                 <input
-                  type="password"
+                  type="text"
                   className="pop-link-text"
-                  placeholder="Current Password"
-                  value=""
+                  placeholder="First Name"
+                  value="Harsh"
                 />
               </div>
             </div>
           </div>
           <div className="links-box">
             <div className="pop-link">
-              <div className="pop-title">New Password</div>
+              <div className="pop-title">Last Name</div>
               <div className="pop-input-link">
                 <input
-                  type="password"
+                  type="text"
                   className="pop-link-text"
-                  placeholder="New Password"
-                  value=""
+                  placeholder="Last Name"
+                  value="Gami"
                 />
               </div>
             </div>
           </div>
           <div className="links-box">
             <div className="pop-link">
-              <div className="pop-title">Confirm Password</div>
+              <div className="pop-title">Email Address</div>
               <div className="pop-input-link">
                 <input
-                  type="password"
+                  type="text"
                   className="pop-link-text"
-                  placeholder="Confirm Password"
-                  value=""
+                  placeholder="Email Address"
+                  value="harshgami39@gmail.com"
                 />
               </div>
             </div>
@@ -61,4 +61,4 @@ function Passpopup({ trigger, settrigger }) {
   );
 }
 
-export default Passpopup;
+export default Profilepopup;

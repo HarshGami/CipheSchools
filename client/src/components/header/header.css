@@ -33,6 +33,26 @@
 
 .left-container {
     display: flex;
+    flex-direction: column;
+}
+
+.profile-image{
+    width: 60px;
+    height: 60px;
+}
+
+.profile-pencil{
+    bottom: 8px;
+    height: 25px;
+    margin-left: 16px;
+    width: 25px;
+    align-items: center;
+    background-color: lightgray;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
 }
 
 .detail-container {
@@ -83,6 +103,15 @@
 @media screen and (max-width: 500px) {
     .header-box {
         height: 85px;
+    }
+
+    .profile-image{
+        width: 50px;
+        height: 50px;
+    }
+
+    .profile-pencil{
+        margin-left: 12px;
     }
 
     .header-container {
