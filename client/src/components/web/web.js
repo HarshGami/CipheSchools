@@ -78,7 +78,7 @@ function Web() {
           <div className="title">LinkedIn</div>
           <div className="input-link">
             <span className="input-icon">
-              <RiLinkedinBoxFill />
+              <RiLinkedinBoxFill className="web-link-image" />
             </span>
             <input
               type="text"
@@ -101,7 +101,7 @@ function Web() {
           <div className="title">Github</div>
           <div className="input-link">
             <span className="input-icon">
-              <BsGithub />
+              <BsGithub className="web-link-image"/>
             </span>
             <input
               type="text"
@@ -124,7 +124,7 @@ function Web() {
           <div className="title">Facebook</div>
           <div className="input-link">
             <span className="input-icon">
-              <BsFacebook />
+              <BsFacebook className="web-link-image"/>
             </span>
             <input
               type="text"
@@ -147,7 +147,7 @@ function Web() {
           <div className="title">Twitter</div>
           <div className="input-link">
             <span className="input-icon">
-              <BsTwitter />
+              <BsTwitter className="web-link-image"/>
             </span>
             <input
               type="text"
@@ -170,7 +170,7 @@ function Web() {
           <div className="title">Instagram</div>
           <div className="input-link">
             <span className="input-icon">
-              <BsInstagram />
+              <BsInstagram className="web-link-image"/>
             </span>
             <input
               type="text"
@@ -193,7 +193,7 @@ function Web() {
           <div className="title">Website</div>
           <div className="input-link">
             <span className="input-icon">
-              <BsGlobe2 />
+              <BsGlobe2 className="web-link-image"/>
             </span>
             <input
               type="text"

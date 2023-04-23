@@ -40,6 +40,7 @@ function Profilepopup({ trigger, settrigger }) {
                   type="text"
                   className="pop-link-text"
                   placeholder="Email Address"
+                  disabled
                   value="harshgami39@gmail.com"
                 />
               </div>

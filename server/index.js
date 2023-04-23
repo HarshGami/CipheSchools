@@ -7,7 +7,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const app = express();
-mongoose.connect("mongodb://localhost:27017/cipherschool");
+mongoose.connect(process.env.MONGO);
 
 app.use(cors());
 app.use(express.urlencoded({ extended: false }));
